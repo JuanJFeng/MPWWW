@@ -1,7 +1,7 @@
-# under-construction
+# Under-Construction
 
 :coffee:
+Sorry, my website is currently down for maintenance. Will be back on 20/02/2020.
 
-Sorry, my website is currently down for maintenance. Will be back around 20/02/2020.
-
-
+Info
+juan.j.feng@icloud.com
