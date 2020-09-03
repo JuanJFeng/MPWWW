@@ -504,3 +504,12 @@ header {
 		display: block !important;
 	}
 }
+
+.content-wrap.landing {
+	p {
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+}
