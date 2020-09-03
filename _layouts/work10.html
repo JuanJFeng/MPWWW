@@ -1,0 +1,79 @@
+---
+layout: default
+---
+
+<div class="nav-sotto">
+</div>
+
+<div class="container-article">
+
+	<div class="desktop-display">
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+
+				{% for image in site.static_files %}
+					{% if image.path contains 'work10-desktop' %}
+						{% if image.basename contains 'white' %}
+							<div class="swiper-slide">
+								<div class="container-img" data-bg="light">
+									<img class="full-page-img" src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+
+									<!-- Add Arrows -->
+									<div class="swiper-button-next"></div>
+									<div class="swiper-button-prev"></div>
+								</div>                              
+							</div>
+						{% endif %}
+
+						{% if image.basename contains 'black' %}
+							<div class="swiper-slide">
+								<div class="container-img" data-bg="dark">
+									<img class="full-page-img" src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+
+									<!-- Add Arrows -->
+									<div class="swiper-button-next"></div>
+									<div class="swiper-button-prev"></div>
+								</div>                               
+							</div>
+						{% endif %}
+					{% endif %}
+				{% endfor %}
+
+			</div>
+
+			<!-- Add Pagination 
+			<div class="swiper-pagination"></div>
+			-->
+			
+		</div>
+	</div>
+
+	<div class="mobile-display">
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+
+				{% for image in site.static_files %}
+					{% if image.path contains 'work10-mobile' %}
+							<div class="swiper-slide">
+								<div class="container-img">
+									<img class="full-page-img" src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+
+									<!-- Add Arrows -->
+									<div class="swiper-button-next"></div>
+									<div class="swiper-button-prev"></div>
+								</div>                              
+							</div>
+					{% endif %}
+				{% endfor %}
+
+			</div>
+
+			<!-- Add Pagination 
+			<div class="swiper-pagination"></div>
+			-->
+			
+		</div>
+	</div>
+
+</div>
+
