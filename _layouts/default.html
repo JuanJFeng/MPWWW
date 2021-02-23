@@ -7,7 +7,6 @@
 
 <title>Marcello Pipitone</title>
 <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/main.css">
-<link rel="stylesheet" href="{{site.baseurl}}/css/swiper.min.css">
 <link rel="shortcut icon" type="image/png" href="/favicon.png">
 
 <!-- SCSS, baby -->
@@ -23,11 +22,11 @@
 			<p>Marcello Pipitone</p>
 			<p>Bonola</p>
 			-->
-			<div class="img_logo">
+			<div class="img_landing">
 				<img src="{{site.baseurl}}/assets/images/MP_logo.png" alt="">
 			</div>
 
-			<div class="button_mp">			
+			<div class="button_landing">			
 		
 				<a href="mailto:hello@marcellopipitone.com" target="_top">
 					<p>Email</p>
@@ -51,7 +50,6 @@
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<script src="{{site.baseurl}}/assets/js/swiper.min.js"></script>
 
 <!-- viewport units on mobile -->
 <script>
@@ -61,43 +59,6 @@
 	});
 </script>
 
-<!-- Swiper -->
-<script>
-    var swiper = new Swiper('.swiper-container', {
-      	spaceBetween: 30,
-		slidesPerView: 1,
-		effect: 'fade',
-		fadeEffect: { crossFade: true },
-		speed: 20,
-      	loop: true,
-		pagination: {
-		el: '.swiper-pagination',
-		type: 'fraction',
-		},
-		navigation: {
-		nextEl: '.swiper-button-next',
-		prevEl: '.swiper-button-prev',
-		},
-    });
-</script>
-
-<!-- Text color switch -->
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
-<script>
-    var $clipper = $('.clipper');
-    $(".container-img").each(function() {
-        $clipper.clone().appendTo($(this));
-    });
-    $clipper.remove();
-</script>
-
-
-<script>
-	var elems = document.getElementsByClassName("show-more");
-	Array.from(elems).forEach(v => v.addEventListener('click', function() {
-	  	this.parentElement.getElementsByClassName('content-bg')[0].classList.toggle('hidden-bg');
-	}));
-</script>
 
 </body>
 </html>

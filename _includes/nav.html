@@ -4,60 +4,7 @@
 
             <div class="nav {{include.navclass}}">
 
-                <div class="nav-left">
-                    <div class="dropdown show-more">
-                        <a class="desktop-display" href="{{site.baseurl}}/">
-                            Alessio Keilty
-                        </a>
-
-                        <a class="mobile-display">
-                            Alessio Keilty
-                        </a>
-
-                        <div class="dropdown-content">
-                            <div class="content-bg hidden-bg">
-                                <div class="background-dropdown mobile-display"></div>
-                                <br>
-                                <a class="mobile-display {% if page.url == '/' %}hidden-homepage{% endif %}" href="{{site.baseurl}}/">
-                                    Back to Home
-                                </a>
-                                <br class="mobile-display {% if page.url == '/' %}hidden-homepage{% endif %}" href="{{site.baseurl}}/">
-                                <br class="mobile-display {% if page.url == '/' %}hidden-homepage{% endif %}" href="{{site.baseurl}}/">
-                                <p>Photographer</p>
-                                <p>Milano</p>
-                                <br>
-
-                                <a href="mailto:alessio.keilty@outlook.it" target="_top">
-                                    alessio.keilty@outlook.it
-                                </a>
-                                <p>+39 3349892298</p>
-                                <a href="https://www.instagram.com/alessiokeilty" target="_blank">
-                                    Instagram
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="nav-right">
-                    <div class="dropdown show-more">
-                        <p>Works</p>
-                        <div class="dropdown-content right-side">
-                            <div class="content-bg hidden-bg">
-                                <div class="background-dropdown mobile-display"></div>
-                                <br>
-                                {% for process-post in site.categories.post %}
-                                    {% if process-post.type contains "post" %}
-                                        <div>
-                                            <a href="{{site.baseurl}}{{process-post.url}}">{{process-post.title}}</a>
-                                        </div>
-                                    {% endif %}
-                                {% endfor %}
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
+                
             </div>
 
         </div>
