@@ -173,60 +173,17 @@ header {
 	}
 }
 
-// Mobile
-.mobile-display {
-	display: none !important;
-
-	@media only screen and (max-width: $mobile) {
-		display: inline-block !important;
-		width: 100vw;
-		height: 100%;
-	}
-
-	.swiper-pagination {
-		width: 100vw;
-	}
-}
-
-.desktop-display {
-
-	@media only screen and (max-width: $mobile) {
-		display: none !important;
-	}
-}
-
-.hidden-homepage {
-	display: none !important;
-}
-
-#content-wrap {
-
-	@media only screen and (max-width: $mobile) {
-		height: 100%;
-	}
-}
-
-.hidden-bg {
-	display: none !important;
-}
-
-.dropdown:hover .hidden-bg {
-	
-	@media only screen and (min-width: $mobile) {
-		display: block !important;
-	}
-}
 
 // landing page style
-
 .img_landing {
+	padding-top: 10vh;
+
 	img {
 		height: 125px !important; // logo size
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
-		margin-top: 10vh;
-
+		
 		@media only screen and (max-width: $mobile) {
 			height: 125px !important; // logo size mobile
 		}
@@ -238,6 +195,10 @@ header {
 	margin-left: auto;
 	margin-right: auto;
 	margin: 27vh 0;
+
+	@media only screen and (max-width: $mobile) {
+		margin: 24vh 0;
+	}
 
 	a {
 		margin: 8vh 0;
