@@ -1,6 +1,6 @@
 # Site Settings
-baseurl: /MPWWW
-url: ""
+baseurl: ""
+url: "http://www.marcellopipitone.com/"
 exclude: ['README.md']
 
 # Sass/SCSS
